@@ -13,6 +13,7 @@ namespace lfrigodesouza.app
         public MainPage()
         {
             InitializeComponent();
+            webView.Source = @"https://www.lfrigodesouza.net/?utm_medium=app&utm_source=android";
         }
     }
 }
