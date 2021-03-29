@@ -1,8 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:renderers="clr-namespace:lfrigodesouza.app.Renderers"
              x:Class="lfrigodesouza.app.MainPage">
     <StackLayout>
-        <WebView x:Name="webView" HeightRequest="1000" WidthRequest="1000" />
+        <Label Text="Loading..." x:Name="loadinLabel"/>
+        <renderers:BlogViewer x:Name="webView" HeightRequest="1000" WidthRequest="1000" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="&lt;"></Button>
+            <Button Text=">"></Button>
+            <Button Text="refresh"></Button>
+            <Button Text="home"></Button>
+        </StackLayout>
     </StackLayout>
 </ContentPage>
